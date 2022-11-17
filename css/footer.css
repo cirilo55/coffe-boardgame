@@ -1,0 +1,82 @@
+footer {
+    background-color: var(--main-bg-color);
+}
+
+footer .container-alura{
+    color: #0f0e19;
+    padding: 1rem 0;
+}
+
+.circle{
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    display: grid;
+    place-items: center;
+    margin: 1px 5px;
+}
+.circle:hover{
+    border: 1px solid var(--main-secondary-color);
+
+}
+
+.como-chegar{
+    width: 80%;
+}
+.enderecos
+{
+    width: 20%;
+}
+.footer-bottom
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-bottom::before
+{
+    display: block;
+    content: '';
+    margin: 15px 50px 0;
+    width: 100%;
+    height: 1px;
+    background-color: var(--main-secondary-color);
+}
+.footer-bottom2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gps-box{
+    width: 100px;
+    height: 100px;
+    border: solid 1px #0f0e19;
+}
+.social{
+    margin-top: 10px;
+}
+.instagram-img{
+    background: url(./../public/images/instagram.svg) no-repeat center;
+    background-size: 25px 25px;
+    height: 25px;
+    width: 25px;
+}
+.ytb-img{
+    background: url(./../public/images/youtube.svg) no-repeat center;
+    background-size: 25px 25px;
+    height: 25px;
+    width: 25px;
+}
+.fb-img{
+    background: url(./../public/images/facebook.svg) no-repeat center;
+    background-size: 25px 25px;
+    height: 25px;
+    width: 25px;
+}
+.mapouter
+{
+    border: 1px solid black;
+    margin: 2rem;
+}
