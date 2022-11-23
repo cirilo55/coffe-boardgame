@@ -7,12 +7,25 @@ Tags: coffe, café , Jogos, boardgame
  */
 
 :root{
-    --main-bg-color: rgb(72, 164, 169);
-    --main-secondary-color: rgb(221, 219, 0);;
+    --main-primary-color: #48a4a9;
+    --main-secondary-color: #dddb00;
+    --main-tertiary-color: #694939;
+
     --main-font: 'Hind';
 
 }
+body{
+    background-image: url('./public/images/white-background2.png') ;
+    background-color: #ccc;
+    /* width: 100%;
+    height: 200%;
+    position: absolute; */
+    font-family: var(--main-font), sans-serif;
+}
+.background-img
+{
 
+}
 /* animações css */
 .pulse:hover {
     -webkit-animation-name: pulse;
@@ -51,3 +64,5 @@ Tags: coffe, café , Jogos, boardgame
     }
     
 }
+
+

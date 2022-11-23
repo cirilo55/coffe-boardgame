@@ -1,5 +1,10 @@
 footer {
-    background-color: var(--main-bg-color);
+    background-color: var(--main-primary-color);
+    clear: both;
+      position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;   
 }
 
 footer .container-alura{
@@ -24,10 +29,6 @@ footer .container-alura{
 .como-chegar{
     width: 80%;
 }
-.enderecos
-{
-    width: 20%;
-}
 .footer-bottom
 {
     display: flex;
@@ -43,11 +44,15 @@ footer .container-alura{
     height: 1px;
     background-color: var(--main-secondary-color);
 }
+.enderecos{
+    margin-left: auto;
+}
 .footer-bottom2
 {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size:8px;
 }
 .gps-box{
     width: 100px;
@@ -79,4 +84,7 @@ footer .container-alura{
 {
     border: 1px solid black;
     margin: 2rem;
+}
+@media (max-width: 639px){
+    
 }

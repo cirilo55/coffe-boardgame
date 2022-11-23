@@ -6,7 +6,7 @@ function dev_registrando_taxonomia()
         'paises',
         'destinos',
         array(
-            'labels' => array('name' => 'Países'),
+            'labels' => array('name' => 'categorias'),
             'hierarchical' => true
         )
     );
@@ -32,7 +32,12 @@ add_action('init', 'dev_registrando_post_customizado');
 
 function dev_adicionando_recursos_ao_tema()
 {
-    add_theme_support('custom-logo');
+    add_theme_support('custom-logo', array(
+        'height'      => 36,
+        'width'       => 16,
+        'flex-height' => true,
+        'flex-width'  => true,
+    ));
     add_theme_support('post-thumbnails');
 }
 
@@ -41,7 +46,7 @@ add_action('after_setup_theme', 'dev_adicionando_recursos_ao_tema');
 function dev_registrando_menu()
 {
     register_nav_menu(
-        'menu-navegacao',
+        'menu-navegacao pulse',
         'Menu navegação'
     );
 }
@@ -128,10 +133,6 @@ function ai_funcao_callback($post)
     <label for="texto_facebook">Facebook Link:</label>
     <input type="text" name="texto_facebook" style="width: 100%" value="<?= $texto_facebook ?>"/>
 
-    <br>
-    <br>
-    <label for="texto_facebook">Link Google Maps: (https://www.embedgooglemap.net/ (width: 410px, height: 244px))</label>
-    <input type="text" name="texto_googlemaps" style="width: 100%" value="<?= $googlemaps ?>"/>
 
     <?php
 }
@@ -182,8 +183,8 @@ function dev_adicionando_scripts()
 
     if (is_front_page()) {
         wp_enqueue_script('typed-js', get_template_directory_uri() . '/js/typed.min.js', array(), false, true);
-        wp_enqueue_script('texto-banner-js', get_template_directory_uri() . '/js/texto-banner.js', array('typed-js'), false, true);
-        wp_localize_script('texto-banner-js', 'data', $textosBanner);
+        // wp_enqueue_script('texto-banner-js', get_template_directory_uri() . '/js/texto-banner.js', array('typed-js'), false, true);
+        // wp_localize_script('texto-banner-js', 'data', $textosBanner);
     }
 }
 

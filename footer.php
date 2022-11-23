@@ -35,18 +35,11 @@
 <footer>
     <div class='footer-up'>
         <div class="container-flex">
-            <?if($arr['googlemaps']){?>
-            <div class='como-chegar' style="width:80%;" >
-                <!-- <h1>Como chegar:</h1>
-                <div class='maps-link'>
-                </div> -->
-            </div>
-            <?}?>
 
             <div class="enderecos">
 
                     <h1>Endereço</h1>
-                    <div>
+                    <div class="underline-animation">
                         <?= ($arr['endereco']) ? $arr['endereco'] : 'Favor Cadastrar No Painel Admin' ?>
                     </div>
 

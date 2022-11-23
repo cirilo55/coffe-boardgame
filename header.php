@@ -34,4 +34,6 @@
     </div>
 </header>
 
+<div class='background-img'></div>
+
 
